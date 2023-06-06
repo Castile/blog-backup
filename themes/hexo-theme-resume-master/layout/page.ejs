@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <div class="sidebar-inner">
+    <header class='header'><h2><%- (config.resume && config.resume.name) ? config.resume.name : theme.resume.name %></h2>
+      <div class='meta'>
+        <% ((config.resume && config.resume.contact ) || []).forEach(function(value){ %>
+          <p><a <%if(value.url){%>href='<%- value.url %>'<%}%>>
+            <i class="<%- value.icon %> fa-fw"></i>&nbsp;&nbsp;<%- value.text %></a></p>
+        <%})%>
+      </div>
+    <hr><br>
+    </header>
+    <div class="list">
+      <ul class="menu-root">
+        <% site.pages.sort('order').each(function (p) { %>
+          <li>
+            <a href="<%- url_for(p.path) %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+    <% if (config.resume && config.resume.download) { %>
+      <div class="footer">
+        <a class="button" href="<%- config.resume.download.url %>"><i class="<%- config.resume.download.icon %>"></i> <%- config.resume.download.title %></a>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<div class="content with-sidebar">
+  <%- page.content %>
+</div>
