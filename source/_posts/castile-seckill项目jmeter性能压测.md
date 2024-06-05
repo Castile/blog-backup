@@ -5,10 +5,9 @@ date: 2023-03-27 23:15:17
 tags:
 	- Java
 	- SpringBoot
-categories:
-	- Java
-	- SpringBoot
 	- 秒杀项目
+categories:
+	- SpringBoot
 ---
 
 

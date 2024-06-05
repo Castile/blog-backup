@@ -1,11 +1,10 @@
 ---
-title: cstile-seckill项目云端部署
+title: castile-seckill项目云端部署
 tags:
   - Java
-categories:
-  - Java
-  - SpringBoot
   - 秒杀项目
+categories:
+  - SpringBoot
 toc: true
 date: 2023-03-26 18:13:40
 ---

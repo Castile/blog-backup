@@ -3,10 +3,11 @@ title: SpringBoot自动配置原理
 tags:
   - SpringBoot
 categories:
-  - SpringBoot
+	- SpringBoot
 cover:
   - /img/cover/springBoot.jpg
 date: 2020-07-14 21:32:54
+toc: true
 ---
 
 
